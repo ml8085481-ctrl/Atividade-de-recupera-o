@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+    real ipi , valor1 , valor2 , total
+    inteiro cod1 , cod2 , qtd1 , qtd2
+    escreva("digite o ipi")
+    leia(ipi)
+    escreva("codigo da peca 1")
+    leia(cod1)
+    escreva("valor da peca 1")
+    leia(valor1)
+    escreva("quantidade peca 1")
+    leia(qtd1)
+    escreva("codigo da peca 2")
+    leia(cod2)
+    escreva("valor da peca 2")
+    leia(valor2)
+    escreva("quantidade da peca 2")
+    leia(qtd2)
+    total = (valor1 * qtd1 + valor2 * qtd2) * (ipi/100 + 1)
+    escreva("valor total", total)
+  }
+}
