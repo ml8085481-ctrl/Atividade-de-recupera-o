@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    inteiro a , b
+    escreva(" digite a")
+    leia(a)
+    escreva("digite b")
+    leia(b)
+    se(a % b == 0 ou b % a == 0){
+      escreva("são múltiplos")
+    }
+    senao{
+      escreva("não são múltiplos")
+    }
+  }
+}
