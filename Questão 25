@@ -1,0 +1,71 @@
+programa {
+  funcao inicio() {
+    inteiro i
+    real a , b , c , aux
+    escreva("digite i")
+    leia(i)
+    escreva("digite a")
+    leia(a)
+    escreva("digite b")
+    leia(b)
+    escreva("digite c")
+    leia(c)
+    se (i == 1){
+      se(a > b){
+        aux = a
+        a = b
+        b = aux
+      }
+      se(a > c){
+        aux = a
+        a = c
+        c = aux
+      }
+      se(b > c){
+        aux = b
+        b = c
+        c = aux
+      }
+      escreva(a," ",b," ",c)
+    }
+    senao se(i == 2){
+      se(a < b){
+        aux = a
+        a = b
+        b = aux
+      }
+      se(a < c){
+        aux = a 
+        a = c
+        c = aux
+      }
+      se(b < c){
+        aux = b
+        b = c
+        c = aux
+      }
+      escreva(a," ",b," ",c)
+    }
+    senao se(i == 3){
+      se(a > b){
+        aux = a
+        a = b
+        b = aux
+      }
+      se(a > c){
+        aux = a
+        a = c
+        c = aux
+      }
+      se(b < c){
+        aux = b
+        b = c
+        c = aux
+      }
+      escreva(a," ",b," ",c)
+    }
+    senao{
+      escreva("opcao invalida")
+    }
+  }
+}
