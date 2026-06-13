@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+    inteiro codigo
+    real salario , novosalario , aumento
+    escreva("digite o salario")
+    leia(salario)
+    escreva("digite o codigo ")
+    leia(codigo)
+    escolha (codigo){
+      caso 101:
+      aumento = salario * 0.10
+      pare
+      caso 102:
+      aumento = salario * 0.20
+      pare
+      caso 103:
+      aumento = salario * 0.30
+      pare
+      caso contrario:
+      aumento = salario * 0.40
+      pare
+    }
+    novosalario = salario + aumento
+    escreva("salario antigo R$", salario , "\n")
+    escreva("novosalario R$", novosalario , "\n")
+    escreva("diferenca R$", aumento)
+
+  }
+}
