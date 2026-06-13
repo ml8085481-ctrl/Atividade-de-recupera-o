@@ -1,0 +1,36 @@
+programa {
+  funcao inicio() {
+    inteiro numero
+    real n1 , n2 , n3 , me ,ma
+    cadeia conceito
+    escreva("digite o numero do aluno")
+    leia(numero)
+    escreva("digite a primeira nota")
+    leia(n1)
+    escreva("digite a segunda nota")
+    leia(n2)
+    escreva("digite a terceira nota")
+    leia(n3)
+    escreva("media dos exercicios")
+    leia(me)
+    ma = (n1 + n2 * 2 + n3 * 3 + me)/7
+    se(ma >= 9){
+      conceito = "A"
+    }
+    senao se(ma >= 7.5){
+      conceito = "B"
+    }
+    senao se(ma >= 6){
+      conceito = "C"
+    }
+    senao se(ma >= 4){
+      conceito = "D"
+    }
+    senao{
+      conceito = "E"
+    }
+    escreva("aluno", numero , "\n")
+    escreva("media", ma, "\n")
+    escreva("conceito", conceito)
+  }
+}
