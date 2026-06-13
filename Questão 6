@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    inteiro horas, minutos, segundos
+    inteiro totalsegundos
+    escreva("digite o tempo em segundos")
+    leia(totalsegundos)
+    horas = totalsegundos / 3600
+    minutos = (totalsegundos % 3600)/60
+    segundos = totalsegundos % 60
+    escreva("horas", horas, "\n")
+    escreva("minutos", minutos, "\n")
+    escreva("segundos", segundos)
+  }
+}
