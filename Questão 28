@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    inteiro hi , hf , mi , mf
+    inteiro inicio , fim , duracao
+    escreva("hora inicial")
+    leia(hi)
+    escreva("hora final")
+    leia(hf)
+    escreva("minuto inicial")
+    leia(mi)
+    escreva("minuto final")
+    leia(mf)
+    inicio = hi * 60 + mi
+    fim = hf * 60 + mf
+    se (fim > inicio){
+      duracao = fim - inicio
+    }
+    senao{
+      duracao = (24 * 60 - inicio) + fim
+    }
+    escreva("duracao", duracao/60, "horas e", duracao % 60, "minutos")
+  }
+}
