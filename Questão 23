@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    real a , b , c , area , p
+    escreva("digite o lado a")
+    leia(a)
+    escreva("digite o lado b")
+    leia(b)
+    escreva("digite o lado c")
+    leia(c)
+    se(a < b + c e b < a + c e c < a + b){
+      p = (a + b + c)/2
+      area = raiz(p*(p - a) * (p - b) * (p - c))
+      escreva("forma um triangulo\n")
+      escreva("area", area)
+    }
+    senao{
+      escreva("não forma triangulo ")
+    }
+  }
+}
