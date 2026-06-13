@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    inteiro a , b , c , maior
+    escreva("digite a")
+    leia(a)
+    escreva("digite b")
+    leia(b)
+    escreva("digite c")
+    leia(c)
+    maior = a
+    se (b > maior){
+      maior = b
+    }
+    se (c > maior){
+      maior = c
+    }
+    escreva(maior, "é o maior")
+  }
+}
