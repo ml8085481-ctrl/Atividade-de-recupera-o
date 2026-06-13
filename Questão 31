@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    inteiro termo , i
+    real e , fatorial
+    termo = 1
+    e = 1
+    enquanto (termo <= 5){
+      fatorial = 1
+      i = 1
+      enquanto(i <= termo){
+        fatorial = fatorial * i
+        i = i + 1
+      }
+      e = e + 1/fatorial
+      escreva("termo", termo, ":", e ,"\n")
+      termo = termo + 1
+    }
+  }
+}
