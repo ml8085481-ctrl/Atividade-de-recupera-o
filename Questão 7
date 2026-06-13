@@ -1,9 +1,0 @@
-programa {
-  funcao inicio() {
-    real custofabrica, custoconsumidor 
-    escreva("o custo da fabrica de carro")
-    leia(custofabrica)
-    custoconsumidor = custofabrica + (custofabrica * 0.28 ) + (custofabrica * 0.45 )
-    escreva("custo ao consumidor R$", custoconsumidor)
-  }
-}
